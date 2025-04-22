@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    color: white;
+
+}
+
+.containar {
+
+    position: relative;
+
+    background-color: black;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 6px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.unorder_list li {
+    display: inline-block;
+    margin: 3px;
+    list-style: none;
+    font-size: 17px;
+}
+
+.unorder_list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.unorder_list li a:hover {
+    color: brown;
+}
+
+.main {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main img {
+    width: 180px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.content button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.background {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background img {
+    cursor: pointer;
+    margin: 4px;
+    width: 30px;
+    transition: all 1s ease;
+}
+
+.background img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .unorder_list li {
+        margin: 2px;
+        font-size: 11px;
+
+
+    }
+
+    .containar {
+        overflow: hidden;
+
+    }
+
+    .main img {
+        width: 100px;
+    }
+
+    .main .content h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .main .content p {
+        font-size: 10px;
+    }
+
+    .background {
+        bottom: 70px;
+    }
+
+    .background img {
+        margin: 0;
+        width: 20px;
+
+
+    }
+
+
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .nav {}
+
+    .unorder_list li {
+        margin: 5px;
+        font-size: 13px;
+
+
+    }
+
+    .main img {
+        width: 130px;
+    }
+
+    .main .content h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .main .content p {
+        font-size: 13px;
+    }
+
+    .background {
+        bottom: 70px;
+    }
+
+    .background img {
+        margin: 5;
+        width: 30px;
+
+
+    }
+
+
+}
